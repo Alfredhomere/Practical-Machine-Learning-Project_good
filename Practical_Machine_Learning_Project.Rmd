@@ -243,9 +243,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Finally, using the provided Test Set out-of-sample error.
 For Random Forests we use the following formula, which yielded a much better prediction in in-sample:
+#### Apply the prediction model
 
 ```{r, include=TRUE}
 predictionsB2 <- predict(modFitB1, DaSetTesting, type = "class")
+predictionsB2
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
